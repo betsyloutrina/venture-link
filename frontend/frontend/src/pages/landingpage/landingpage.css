@@ -210,13 +210,26 @@ body{
 
 .features{
     padding:90px 8%;
-    background:white;
+    background:#f8fbff;
 }
 
-.features h2{
+.section-title{
     text-align:center;
-    font-size:42px;
     margin-bottom:60px;
+}
+
+.section-title h2{
+    font-size:42px;
+    font-weight:700;
+    color:#1f2937;
+}
+
+.title-line{
+    width:70px;
+    height:4px;
+    background:#2563eb;
+    margin:15px auto 0;
+    border-radius:20px;
 }
 
 .feature-grid{
@@ -226,25 +239,129 @@ body{
 }
 
 .feature-card{
-    background:#f8fafc;
-    padding:35px;
+
+    background:#ffffff;
+
     border-radius:18px;
-    box-shadow:0 5px 20px rgba(0,0,0,.05);
+
+    padding:28px;
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:18px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
+
     transition:.3s;
+
+    min-height:165px;
+
 }
 
 .feature-card:hover{
-    transform:translateY(-8px);
+
+    transform:translateY(-6px);
+
+    box-shadow:0 15px 35px rgba(37,99,235,.12);
+
 }
 
-.feature-card h3{
-    color:#2563eb;
-    margin-bottom:18px;
+.feature-icon{
+
+    width:60px;
+
+    height:60px;
+
+    min-width:60px;
+
+    border-radius:14px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
 }
 
-.feature-card p{
+/* Individual Colors */
+
+.ai{
+    background:#E8F0FF;
+}
+
+.funding{
+    background:#E8FFF1;
+}
+
+.mentor{
+    background:#F5ECFF;
+}
+
+.feature-icon img{
+
+    width:30px;
+
+    height:30px;
+
+    object-fit:contain;
+
+}
+
+.feature-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-start;
+
+    align-items:flex-start;
+
+}
+
+.feature-content h3{
+
+    font-size:24px;
+
+    font-weight:600;
+
+    color:#1f2937;
+
+    margin-bottom:10px;
+
+}
+
+.feature-content p{
+
     color:#6b7280;
-    line-height:1.7;
+
+    font-size:15px;
+
+    line-height:1.8;
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:992px){
+
+.feature-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.feature-card{
+
+    min-height:auto;
+
+}
+
 }
 /* ===========================
    How It Works
